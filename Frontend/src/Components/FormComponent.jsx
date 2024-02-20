@@ -22,7 +22,7 @@ const FormComponent = () => {
         
         try {
             console.log(formData)
-            const response = await fetch("http://localhost:5000/updateDateAndTime", {
+            const response = await fetch("https://food-delivery-sand.vercel.app/updateDateAndTime", {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
