@@ -14,7 +14,7 @@ const App = () => {
 
         const fetchRestaurants = async () => {
             try {
-                const response = await fetch("http://localhost:5000/restaurants");
+                const response = await fetch("https://food-delivery-sand.vercel.app/restaurants");
                 const data = await response.json();
                 setRestaurants(data);
             } catch (error) {
